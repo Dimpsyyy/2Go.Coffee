@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'montserrat', sans-serif;
+  color: #3e2c1c;
+  background: #fefaf6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #d7ccc8;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  display: inline;
+  font-size: 24px;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #3e2c1c;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .button {
+  background: #6d4c41;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.produk {
+  padding: 60px 0;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card .button {
+  margin-top: 10px;
+  background: #25d366;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tentang, .kontak {
+  background: #efebe9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer {
+  background: #d7ccc8;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+/* Background untuk Hero Section */
+.hero {
+  background-image: url('images/masthead.jpg'); /* Ganti dengan nama file gambar yang kamu punya */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+/* Overlay agar teks tetap terbaca */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Bayangan gelap transparan */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.button {
+  background-color: #6f4e37;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #5a3d2b;
+}
